@@ -2,7 +2,7 @@ require './config/environment'
 require 'json'
 
 class ApplicationController < Sinatra::Base
-  set :default_content_type, 'application/json'
+  # set :default_content_type, 'application/json'
   
   configure do
     set :public_folder, 'public'

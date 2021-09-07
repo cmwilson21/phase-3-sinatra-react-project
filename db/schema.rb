@@ -10,16 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_04_025018) do
+ActiveRecord::Schema.define(version: 2021_09_05_204557) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
-    t.integer "show_id", null: false
+    t.integer "show_id", 
   end
 
   create_table "shows", force: :cascade do |t|
     t.string "name"
-    t.string "network"
   end
 
 end

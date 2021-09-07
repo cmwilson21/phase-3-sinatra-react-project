@@ -23,14 +23,15 @@ class ShowsController < ApplicationController
     end
   end
 
-  patch "/shows/:id" do
-    find_shows
-    if show.update(params)
-      shows_to_json
-    else
-     shows_errors_messages
-    end
-  end
+  # Stretch goal for added feature
+  # patch "/shows/:id" do
+  #   find_shows
+  #   if show.update(params)
+  #     shows_to_json
+  #   else
+  #    shows_errors_messages
+  #   end
+  # end
 
   delete "/shows/:id" do
     find_shows
